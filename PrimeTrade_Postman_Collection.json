@@ -1,0 +1,221 @@
+{
+  "info": {
+    "_postman_id": "be379c7a-112b-4e3b-aad9-4d7dabf8cb20",
+    "name": "PrimeTrade_frontend_task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29566721"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Pankaj\",\r\n  \"email\": \"pankaj@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"pankaj@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Profile",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTQwZjJiZDQxMzJhNTgxZjY5N2VjMSIsImlhdCI6MTc3MTMxMDkzOSwiZXhwIjoxNzcxMzk3MzM5fQ.ggLmHZoqdxcfmLsLRtl_LxK2hOIbTrfU55QkzZwTlO4",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/auth/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTQwZjJiZDQxMzJhNTgxZjY5N2VjMSIsImlhdCI6MTc3MTMxMDkzOSwiZXhwIjoxNzcxMzk3MzM5fQ.ggLmHZoqdxcfmLsLRtl_LxK2hOIbTrfU55QkzZwTlO4",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"New Task\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Task (Show Task)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTQwZjJiZDQxMzJhNTgxZjY5N2VjMSIsImlhdCI6MTc3MTMxMDkzOSwiZXhwIjoxNzcxMzk3MzM5fQ.ggLmHZoqdxcfmLsLRtl_LxK2hOIbTrfU55QkzZwTlO4",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Task",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTQwZjJiZDQxMzJhNTgxZjY5N2VjMSIsImlhdCI6MTc3MTMxMDkzOSwiZXhwIjoxNzcxMzk3MzM5fQ.ggLmHZoqdxcfmLsLRtl_LxK2hOIbTrfU55QkzZwTlO4",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Updated Task\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/69941069d4132a581f697ec5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "tasks",
+            "69941069d4132a581f697ec5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTQwZjJiZDQxMzJhNTgxZjY5N2VjMSIsImlhdCI6MTc3MTMxMDkzOSwiZXhwIjoxNzcxMzk3MzM5fQ.ggLmHZoqdxcfmLsLRtl_LxK2hOIbTrfU55QkzZwTlO4",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/69941069d4132a581f697ec5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "tasks",
+            "69941069d4132a581f697ec5"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
