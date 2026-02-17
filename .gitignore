@@ -7,8 +7,5 @@ frontend/node_modules/
 backend/.env
 frontend/.env
 
-# React build folder
-frontend/build/
-
 # Logs
 npm-debug.log*
